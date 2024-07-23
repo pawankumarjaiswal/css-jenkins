@@ -12,7 +12,8 @@ spec:
       name: css-pod
       labels:
         project: css-jenkins  
-    containers:
-    - name: css-pod
-      image: ubuntu
+    spec:
+      containers:
+      - name: css-pod
+        image: ubuntu
       
