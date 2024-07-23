@@ -15,5 +15,5 @@ spec:
     spec:
       containers:
       - name: css-pod
-        image: ubuntu
+        image: public.ecr.aws/n4f2g6n0/css-template
       
