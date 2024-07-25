@@ -1,19 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: css-deployment
+  name: css-deployment1
 spec:
   replicas: 2
   selector:
     matchLabels:
-        project: css-jenkins
+        project: css-jenkins1
   template:
     metadata:
       name: css-pod
       labels:
-        project: css-jenkins  
+        project: css-jenkins1  
     spec:
       containers:
       - name: css-pod
-        image: public.ecr.aws/n4f2g6n0/css-template
-      
+        image: public.ecr.aws/n4f2g6n0/css-template:latest
+        ports:
+        - containerPort: 80
+          protocol: TCP  
