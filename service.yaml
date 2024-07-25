@@ -8,4 +8,4 @@ spec:
       targetPort: 80
   type: LoadBalancer
   selector:
-    project: css-jenkins
+    project: css-jenkins1
